@@ -249,6 +249,16 @@ section.seventh {
   background-position: center;
   background-size: cover;
 }
+section.seventh h1 {
+  margin-bottom: 30px;
+}
+section.seventh > .container {
+  padding: 10px 20px;
+  line-height: 1.3rem;
+}
+section.seventh > .container .more-arrow {
+  margin-top: 30px;
+}
 
 footer {
   color: #999;

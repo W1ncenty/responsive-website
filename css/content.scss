@@ -231,6 +231,14 @@ section {
         background-image: url('../img/golf6.jpeg');
         background-position: center;
         background-size: cover;
+        h1 { margin-bottom: $padding-large; }
+        > .container {
+            padding: $padding-small $padding-medium;
+            line-height: 1.3rem;
+            .more-arrow {
+                margin-top: $padding-large;
+            }
+        }
     }
 
 }
