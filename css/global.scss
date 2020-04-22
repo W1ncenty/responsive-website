@@ -1,0 +1,48 @@
+@import 'variables';
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    &.no-center {
+        text-align: left;
+    }
+}
+
+h2 {
+    @extend h1;
+    font-size: 0.8rem;
+}
+
+section {
+    padding: $padding-large 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.more-arrow {
+    text-align: center;
+}
+
+.overlay-dark {
+    position: relative;
+    color: $color-text-bright;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.15);
+        filter: grayscale(100%);
+    }
+    * {
+        position: relative;
+    }
+}

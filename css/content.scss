@@ -1,0 +1,289 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+    background-clip: border-box;
+}
+
+html {
+    font-size: $font-size-regular;
+    font-family: sans-serif;
+    color: $color-text-dark;
+}
+
+.container {
+    margin: 0;
+    padding: 0 $padding-small;
+    width: 100%;
+}
+
+.c1, .c2, .c3, .c3-2, .c4, .c5, .c5-2 { width: 100%; }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &.space-between { justify-content: space-between; }
+    &.no-wrap { flex-wrap: nowrap; }
+}
+
+header > .container {
+    > .logo-area {
+        position: relative;
+        padding: $padding-small 0px;
+        > .corner-options {
+            position: absolute;
+            right: 0;
+            top: $padding-small;
+            text-align: right;
+            font-size: 0.6rem;
+            line-height: 0.8rem;
+        }
+        > #logo > img {
+            display: block;
+            margin: auto;
+            width: 40%;
+            border: 1px solid $color-text-dark;
+            border-radius: 4px;
+        }
+    }
+    > #menu-desktop {
+        display: none;
+    }
+}
+
+section {
+    &.first {
+        // tu magia
+        background-image: url('../img/golf1.jpeg');
+        background-position: center;
+        background-size: cover;
+        #list-recommended {
+            text-transform: uppercase;
+            margin-bottom: $padding-large;
+            > hr { width: 200px; margin-left: 0px; }
+        }
+        #weather-window {
+            background-color: $color-bg-fifth;
+            float: none;
+            margin: auto;
+            width: 65%;
+            padding: $padding-medium $padding-small;
+            .center-vertically {
+                align-items: center;
+                padding: 5px 0;
+            }
+            .title {
+                font-size: 0.8rem;
+                text-transform: uppercase;
+            }
+            .ws1 {
+                font-size: 0.55rem;
+                text-transform: uppercase;
+                line-height: 30px;
+            }
+            .ws2 { font-size: 1.2rem; }
+            .ws3 {
+                font-size: 0.5rem;
+                > a {
+                    color: rgb(255, 127, 0);
+                }
+            }
+            .forecast {
+                font-size: 0.6rem;
+                i { font-size: inherit; }
+                .c1 {
+                    text-align: center;
+                    padding-bottom: 5px;
+                }
+            }
+            .more-arrow {
+                position: relative;
+                top: 5px;
+            }
+        }
+        hr {
+            border: 0px;
+            height: 1px;
+            background: $color-text-bright;
+        }
+    }
+
+    &.second {
+        .article-brief-area {
+            padding: $padding-small 0;
+            > .c3 {
+                margin-bottom: $padding-small;
+            }
+            > .article-content {
+                text-align: justify;
+                .show-more {
+                    float: right;
+                    color: limegreen;
+                }
+            }
+            +hr {
+                width: 100%;
+            }
+        }
+        .more-arrow {
+            margin-top: $padding-large;
+            color: green;
+        }
+    }
+
+    &.third {
+        // tu czary
+        background-color: $color-bg-third;
+        background-image: url('../img/golf2.jpg');
+        background-position: center;
+        background-size: cover;
+        h1 { margin-bottom: $padding-large; }
+        .content {
+            line-height: 1.8rem;
+        }
+        hr { margin: $padding-small 0; }
+        .more-arrow { margin-top: $padding-medium; }
+    }
+
+    &.fourth > .container{
+        padding: $padding-small $padding-medium;
+        h1 { margin-bottom: $padding-large; }
+    }
+
+    &.fifth {
+        // tu czary
+        background-color: $color-bg-fifth;
+        color: $color-text-bright;
+        > .container {
+            padding: $padding-small $padding-medium;
+            h1 { margin-bottom: $padding-tiny; }
+            h2 { margin-bottom: $padding-large; }
+            .row {
+                font-size: 1rem;
+                line-height: 1.2rem;
+                p { margin-bottom: $padding-medium; }
+                ul {
+                    list-style: disc inside;
+                    margin-bottom: $padding-medium;
+                }
+                .photo {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: $padding-medium;
+                }
+            }
+            .more-arrow {
+                margin-top: $padding-medium;
+            }
+        }
+    }
+
+    &.sixth {
+        
+        background-color: $color-bg-sixth;
+        > .container {
+            h1 { margin-bottom: $padding-tiny; }
+            h2 { margin-bottom: $padding-large; }
+            p, span {
+                margin-bottom: $padding-medium;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                height: auto;
+                margin-bottom: $padding-medium;
+                td {
+                    padding: $padding-tiny;
+                    border-bottom: 1px solid black;
+                }
+            }
+
+            img { // TODO foto ma wystawać
+                width: 100%;
+                height: auto;
+                margin-bottom: $padding-medium;
+            }
+        }
+    }
+    &.sixth::after {
+        display: box;
+        content: '<div></div>';
+        height: 300px;
+        background-color: #fff;
+    }
+
+    &.seventh {
+        // tutaj magia
+        color: $color-text-bright;
+        background-color: $color-bg-seventh;
+        background-image: url('../img/golf6.jpeg');
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+
+footer {
+    color: #999;
+    background-color: $color-bg-footer;
+    height: 200px;
+    text-transform: uppercase;
+    .container {
+        height: inherit;
+        align-items: center;
+        > img {
+            border: 1px solid $color-text-dark;
+            border-radius: 4px;
+            height: 100px;
+        }
+        > a {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .c2, .c3, .c4, .c5 { width: 50%; }
+    .container {
+        padding-left: $padding-small;
+        padding-right: $padding-small;
+    }
+    section.first > div.container {
+        #list-recommended {
+            margin-top: 200px;
+        }
+        #weather-window {
+            float: right;
+            margin: 0px;
+            width: 66%;
+        }
+    }
+}
+
+@media (min-width: 970px) {
+    .hide-lg { display: none; }
+    .container {
+        width: 970px;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .c2 { width: 50%; }
+    .c3 { width: 33%; }
+    .c4 { width: 25%; }
+    .c5 { width: 20%; }
+    .c3-2 { width: 66%; }
+    .c5-2 { width: 45%; }
+
+    header > .container > #menu-desktop {
+        display: flex;
+        padding: $padding-large 0px;
+        text-transform: uppercase;
+    }
+
+    section.first > div.container #weather-window {
+        width: 60%;
+    }
+}
