@@ -21,9 +21,9 @@ html {
 
 .row {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     &.space-between { justify-content: space-between; }
+    &.space-around { justify-content: space-around; }
     &.no-wrap { flex-wrap: nowrap; }
 }
 
@@ -110,6 +110,7 @@ section {
     }
 
     &.second {
+        h1 { margin-bottom: $padding-small; }
         .article-brief-area {
             padding: $padding-small 0;
             > .c3 {
@@ -265,10 +266,7 @@ footer {
 
 @media (min-width: 600px) {
     .c2, .c3, .c4, .c5 { width: 50%; }
-    .container {
-        padding-left: $padding-small;
-        padding-right: $padding-small;
-    }
+    .container { padding: 0 $padding-large; }
     section.first > div.container {
         #list-recommended {
             margin-top: 200px;
@@ -279,25 +277,8 @@ footer {
             width: 66%;
         }
     }
-
-    footer {
-        display: block;
-        color: #999;
-        background-color: $color-bg-footer;
-        height: 200px;
-        text-transform: uppercase;
-        .container {
-            height: inherit;
-            align-items: center;
-            > img {
-                border: 1px solid $color-text-dark;
-                border-radius: 4px;
-                height: 100px;
-            }
-            > a {
-                display: none;
-            }
-        }
+    section.eighth > .container img {
+        margin-top: $padding-small;
     }
 }
 
@@ -316,13 +297,49 @@ footer {
     .c3-2 { width: 66%; }
     .c5-2 { width: 45%; }
 
-    header > .container > #menu-desktop {
-        display: flex;
-        padding: $padding-large 0px;
-        text-transform: uppercase;
+    h1 { margin: $padding-large 0 !important; }
+
+    section {
+        padding-bottom: $padding-large !important;
+        > .container > .more-arrow {
+            padding: $padding-large 0 !important;
+            > i { font-size: 2.65rem; }
+        }
+    }
+
+    header > .container {
+        > .logo-area > .corner-options {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+        > #menu-desktop {
+            display: flex;
+            padding: $padding-large 0px;
+            text-transform: uppercase;
+        }
     }
 
     section.first > div.container #weather-window {
         width: 60%;
+    }
+
+    footer {
+        display: block;
+        color: $color-text-bright;
+        background-color: $color-bg-footer;
+        height: 200px;
+        text-transform: uppercase;
+        .container {
+            height: inherit;
+            align-items: center;
+            > img {
+                border: 1px solid $color-text-dark;
+                border-radius: 4px;
+                height: 100px;
+            }
+            > a {
+                display: block;
+            }
+        }
     }
 }

@@ -21,11 +21,13 @@ html {
 
 .row {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 .row.space-between {
   justify-content: space-between;
+}
+.row.space-around {
+  justify-content: space-around;
 }
 .row.no-wrap {
   flex-wrap: nowrap;
@@ -114,6 +116,9 @@ section.first hr {
   border: 0px;
   height: 1px;
   background: #fff;
+}
+section.second h1 {
+  margin-bottom: 10px;
 }
 section.second .article-brief-area {
   padding: 10px 0;
@@ -285,8 +290,7 @@ footer {
   }
 
   .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 30px;
   }
 
   section.first > div.container #list-recommended {
@@ -298,24 +302,8 @@ footer {
     width: 66%;
   }
 
-  footer {
-    display: block;
-    color: #999;
-    background-color: #555;
-    height: 200px;
-    text-transform: uppercase;
-  }
-  footer .container {
-    height: inherit;
-    align-items: center;
-  }
-  footer .container > img {
-    border: 1px solid #555;
-    border-radius: 4px;
-    height: 100px;
-  }
-  footer .container > a {
-    display: none;
+  section.eighth > .container img {
+    margin-top: 10px;
   }
 }
 @media (min-width: 970px) {
@@ -354,6 +342,24 @@ footer {
     width: 45%;
   }
 
+  h1 {
+    margin: 30px 0 !important;
+  }
+
+  section {
+    padding-bottom: 30px !important;
+  }
+  section > .container > .more-arrow {
+    padding: 30px 0 !important;
+  }
+  section > .container > .more-arrow > i {
+    font-size: 2.65rem;
+  }
+
+  header > .container > .logo-area > .corner-options {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
   header > .container > #menu-desktop {
     display: flex;
     padding: 30px 0px;
@@ -362,6 +368,26 @@ footer {
 
   section.first > div.container #weather-window {
     width: 60%;
+  }
+
+  footer {
+    display: block;
+    color: #fff;
+    background-color: #555;
+    height: 200px;
+    text-transform: uppercase;
+  }
+  footer .container {
+    height: inherit;
+    align-items: center;
+  }
+  footer .container > img {
+    border: 1px solid #555;
+    border-radius: 4px;
+    height: 100px;
+  }
+  footer .container > a {
+    display: block;
   }
 }
 
