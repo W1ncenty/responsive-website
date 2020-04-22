@@ -200,7 +200,7 @@ section.sixth > .container h1 {
 section.sixth > .container h2 {
   margin-bottom: 30px;
 }
-section.sixth > .container p, section.sixth > .container span {
+section.sixth > .container p, section.sixth > .container > span {
   margin-bottom: 20px;
 }
 section.sixth > .container table {
@@ -214,15 +214,14 @@ section.sixth > .container table td {
   border-bottom: 1px solid black;
 }
 section.sixth > .container img {
+  margin-top: -9em;
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  position: relative;
+  top: 10em;
 }
-section.sixth::after {
-  display: box;
-  content: "<div></div>";
-  height: 300px;
-  background-color: #fff;
+section.filler {
+  height: 15em;
 }
 section.seventh {
   color: #fff;

@@ -185,7 +185,7 @@ section {
         > .container {
             h1 { margin-bottom: $padding-tiny; }
             h2 { margin-bottom: $padding-large; }
-            p, span {
+            p, > span {
                 margin-bottom: $padding-medium;
             }
 
@@ -199,19 +199,18 @@ section {
                     border-bottom: 1px solid black;
                 }
             }
-
             img { // TODO foto ma wystawać
+                margin-top: -9em;
                 width: 100%;
                 height: auto;
-                margin-bottom: $padding-medium;
+                position: relative;
+                top: 10em;
             }
         }
     }
-    &.sixth::after {
-        display: box;
-        content: '<div></div>';
-        height: 300px;
-        background-color: #fff;
+
+    &.filler {
+        height: 15em;
     }
 
     &.seventh {
