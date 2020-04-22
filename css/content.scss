@@ -180,25 +180,36 @@ section {
     }
 
     &.sixth {
-        
         background-color: $color-bg-sixth;
         > .container {
             h1 { margin-bottom: $padding-tiny; }
-            h2 { margin-bottom: $padding-large; }
-            p, > span {
-                margin-bottom: $padding-medium;
+            h2 { margin-bottom: $padding-large; line-height: 1rem; }
+            h3 {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.2rem;
+                margin-bottom: $padding-small;
             }
-
+            p { margin-bottom: $padding-medium; }
             table {
                 border-collapse: collapse;
                 width: 100%;
                 height: auto;
                 margin-bottom: $padding-medium;
                 td {
-                    padding: $padding-tiny;
+                    padding: $padding-small 0;
                     border-bottom: 1px solid black;
+                    font-size: 0.7rem;
                 }
+                thead {
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    td { font-size: 0.75rem; }
+                }
+                
             }
+            .secret { font-size: 0.55rem; }
             img {
                 margin-top: -9em;
                 width: 100%;
@@ -210,7 +221,7 @@ section {
     }
 
     &.filler {
-        height: 15em;
+        height: 12em;
     }
 
     &.seventh {

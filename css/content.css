@@ -199,8 +199,15 @@ section.sixth > .container h1 {
 }
 section.sixth > .container h2 {
   margin-bottom: 30px;
+  line-height: 1rem;
 }
-section.sixth > .container p, section.sixth > .container > span {
+section.sixth > .container h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+section.sixth > .container p {
   margin-bottom: 20px;
 }
 section.sixth > .container table {
@@ -210,8 +217,20 @@ section.sixth > .container table {
   margin-bottom: 20px;
 }
 section.sixth > .container table td {
-  padding: 5px;
+  padding: 10px 0;
   border-bottom: 1px solid black;
+  font-size: 0.7rem;
+}
+section.sixth > .container table thead {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+section.sixth > .container table thead td {
+  font-size: 0.75rem;
+}
+section.sixth > .container .secret {
+  font-size: 0.55rem;
 }
 section.sixth > .container img {
   margin-top: -9em;
@@ -221,7 +240,7 @@ section.sixth > .container img {
   top: 10em;
 }
 section.filler {
-  height: 15em;
+  height: 12em;
 }
 section.seventh {
   color: #fff;
