@@ -53,7 +53,7 @@ header > .container {
 }
 
 section {
-    &.first {
+    &#first {
         // tu magia
         background-image: url('../img/golf1.jpeg');
         background-position: center;
@@ -109,7 +109,7 @@ section {
         }
     }
 
-    &.second {
+    &#second {
         h1 { margin-bottom: $padding-small; }
         .article-brief-area {
             padding: $padding-small 0;
@@ -133,7 +133,7 @@ section {
         }
     }
 
-    &.third {
+    &#third {
         // tu czary
         background-color: $color-bg-third;
         background-image: url('../img/golf2.jpg');
@@ -147,12 +147,12 @@ section {
         .more-arrow { margin-top: $padding-medium; }
     }
 
-    &.fourth > .container{
+    &#fourth > .container {
         padding: $padding-small $padding-medium;
         h1 { margin-bottom: $padding-large; }
     }
 
-    &.fifth {
+    &#fifth {
         // tu czary
         background-color: $color-bg-fifth;
         color: $color-text-bright;
@@ -180,7 +180,7 @@ section {
         }
     }
 
-    &.sixth {
+    &#sixth {
         background-color: $color-bg-sixth;
         > .container {
             h1 { margin-bottom: $padding-tiny; }
@@ -225,7 +225,7 @@ section {
         height: 12em;
     }
 
-    &.seventh {
+    &#seventh {
         // tutaj magia
         color: $color-text-bright;
         background-color: $color-bg-seventh;
@@ -242,7 +242,7 @@ section {
         }
     }
 
-    &.eighth {
+    &#eighth {
         h1 { margin-bottom: $padding-large; }
         > .container {
             padding: $padding-small $padding-medium;
@@ -267,7 +267,7 @@ footer {
 @media (min-width: 600px) {
     .c2, .c3, .c4, .c5 { width: 50%; }
     .container { padding: 0 $padding-large; }
-    section.first > div.container {
+    section#first > div.container {
         #list-recommended {
             margin-top: 200px;
         }
@@ -277,7 +277,7 @@ footer {
             width: 66%;
         }
     }
-    section.eighth > .container img {
+    section#eighth > .container img {
         margin-top: $padding-small;
     }
 }
@@ -303,7 +303,7 @@ footer {
         padding-bottom: $padding-large !important;
         > .container > .more-arrow {
             padding: $padding-large 0 !important;
-            > i { font-size: 2.65rem; }
+            i { font-size: 2.65rem; }
         }
     }
 
@@ -319,7 +319,7 @@ footer {
         }
     }
 
-    section.first > div.container #weather-window {
+    section#first > div.container #weather-window {
         width: 60%;
     }
 

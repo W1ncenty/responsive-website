@@ -56,188 +56,188 @@ header > .container > #menu-desktop {
   display: none;
 }
 
-section.first {
+section#first {
   background-image: url("../img/golf1.jpeg");
   background-position: center;
   background-size: cover;
 }
-section.first #list-recommended {
+section#first #list-recommended {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-section.first #list-recommended > hr {
+section#first #list-recommended > hr {
   width: 200px;
   margin-left: 0px;
 }
-section.first #weather-window {
+section#first #weather-window {
   background-color: #458f98;
   float: none;
   margin: auto;
   width: 65%;
   padding: 20px 10px;
 }
-section.first #weather-window .center-vertically {
+section#first #weather-window .center-vertically {
   align-items: center;
   padding: 5px 0;
 }
-section.first #weather-window .title {
+section#first #weather-window .title {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
-section.first #weather-window .ws1 {
+section#first #weather-window .ws1 {
   font-size: 0.55rem;
   text-transform: uppercase;
   line-height: 30px;
 }
-section.first #weather-window .ws2 {
+section#first #weather-window .ws2 {
   font-size: 1.2rem;
 }
-section.first #weather-window .ws3 {
+section#first #weather-window .ws3 {
   font-size: 0.5rem;
 }
-section.first #weather-window .ws3 > a {
+section#first #weather-window .ws3 > a {
   color: #ff7f00;
 }
-section.first #weather-window .forecast {
+section#first #weather-window .forecast {
   font-size: 0.6rem;
 }
-section.first #weather-window .forecast i {
+section#first #weather-window .forecast i {
   font-size: inherit;
 }
-section.first #weather-window .forecast .c1 {
+section#first #weather-window .forecast .c1 {
   text-align: center;
   padding-bottom: 5px;
 }
-section.first #weather-window .more-arrow {
+section#first #weather-window .more-arrow {
   position: relative;
   top: 5px;
 }
-section.first hr {
+section#first hr {
   border: 0px;
   height: 1px;
   background: #fff;
 }
-section.second h1 {
+section#second h1 {
   margin-bottom: 10px;
 }
-section.second .article-brief-area {
+section#second .article-brief-area {
   padding: 10px 0;
 }
-section.second .article-brief-area > .c3 {
+section#second .article-brief-area > .c3 {
   margin-bottom: 10px;
 }
-section.second .article-brief-area > .article-content {
+section#second .article-brief-area > .article-content {
   text-align: justify;
 }
-section.second .article-brief-area > .article-content .show-more {
+section#second .article-brief-area > .article-content .show-more {
   float: right;
   color: limegreen;
 }
-section.second .article-brief-area + hr {
+section#second .article-brief-area + hr {
   width: 100%;
 }
-section.second .more-arrow {
+section#second .more-arrow {
   margin-top: 30px;
   color: green;
 }
-section.third {
+section#third {
   background-color: #ff8764;
   background-image: url("../img/golf2.jpg");
   background-position: center;
   background-size: cover;
 }
-section.third h1 {
+section#third h1 {
   margin-bottom: 30px;
 }
-section.third .content {
+section#third .content {
   line-height: 1.8rem;
 }
-section.third hr {
+section#third hr {
   margin: 10px 0;
 }
-section.third .more-arrow {
+section#third .more-arrow {
   margin-top: 20px;
 }
-section.fourth > .container {
+section#fourth > .container {
   padding: 10px 20px;
 }
-section.fourth > .container h1 {
+section#fourth > .container h1 {
   margin-bottom: 30px;
 }
-section.fifth {
+section#fifth {
   background-color: #458f98;
   color: #fff;
 }
-section.fifth > .container {
+section#fifth > .container {
   padding: 10px 20px;
 }
-section.fifth > .container h1 {
+section#fifth > .container h1 {
   margin-bottom: 5px;
 }
-section.fifth > .container h2 {
+section#fifth > .container h2 {
   margin-bottom: 30px;
 }
-section.fifth > .container .row {
+section#fifth > .container .row {
   font-size: 1rem;
   line-height: 1.2rem;
 }
-section.fifth > .container .row p {
+section#fifth > .container .row p {
   margin-bottom: 20px;
 }
-section.fifth > .container .row ul {
+section#fifth > .container .row ul {
   list-style: disc inside;
   margin-bottom: 20px;
 }
-section.fifth > .container .row .photo {
+section#fifth > .container .row .photo {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
-section.fifth > .container .more-arrow {
+section#fifth > .container .more-arrow {
   margin-top: 20px;
 }
-section.sixth {
+section#sixth {
   background-color: #e5eff0;
 }
-section.sixth > .container h1 {
+section#sixth > .container h1 {
   margin-bottom: 5px;
 }
-section.sixth > .container h2 {
+section#sixth > .container h2 {
   margin-bottom: 30px;
   line-height: 1rem;
 }
-section.sixth > .container h3 {
+section#sixth > .container h3 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
-section.sixth > .container p {
+section#sixth > .container p {
   margin-bottom: 20px;
 }
-section.sixth > .container table {
+section#sixth > .container table {
   border-collapse: collapse;
   width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
-section.sixth > .container table td {
+section#sixth > .container table td {
   padding: 10px 0;
   border-bottom: 1px solid black;
   font-size: 0.7rem;
 }
-section.sixth > .container table thead {
+section#sixth > .container table thead {
   white-space: nowrap;
   text-transform: uppercase;
   font-weight: bold;
 }
-section.sixth > .container table thead td {
+section#sixth > .container table thead td {
   font-size: 0.75rem;
 }
-section.sixth > .container .secret {
+section#sixth > .container .secret {
   font-size: 0.55rem;
 }
-section.sixth > .container img {
+section#sixth > .container img {
   margin-top: -9em;
   width: 100%;
   height: auto;
@@ -247,36 +247,36 @@ section.sixth > .container img {
 section.filler {
   height: 12em;
 }
-section.seventh {
+section#seventh {
   color: #fff;
   background-color: #70b8b4;
   background-image: url("../img/golf6.jpeg");
   background-position: center;
   background-size: cover;
 }
-section.seventh h1 {
+section#seventh h1 {
   margin-bottom: 30px;
 }
-section.seventh > .container {
+section#seventh > .container {
   padding: 10px 20px;
   line-height: 1.3rem;
 }
-section.seventh > .container .more-arrow {
+section#seventh > .container .more-arrow {
   margin-top: 30px;
 }
-section.eighth h1 {
+section#eighth h1 {
   margin-bottom: 30px;
 }
-section.eighth > .container {
+section#eighth > .container {
   padding: 10px 20px;
   line-height: 1.1rem;
 }
-section.eighth > .container span, section.eighth > .container p {
+section#eighth > .container span, section#eighth > .container p {
   width: 100%;
   display: inline-block;
   margin-bottom: 1.1rem;
 }
-section.eighth > .container img {
+section#eighth > .container img {
   width: 100%;
 }
 
@@ -293,16 +293,16 @@ footer {
     padding: 0 30px;
   }
 
-  section.first > div.container #list-recommended {
+  section#first > div.container #list-recommended {
     margin-top: 200px;
   }
-  section.first > div.container #weather-window {
+  section#first > div.container #weather-window {
     float: right;
     margin: 0px;
     width: 66%;
   }
 
-  section.eighth > .container img {
+  section#eighth > .container img {
     margin-top: 10px;
   }
 }
@@ -352,7 +352,7 @@ footer {
   section > .container > .more-arrow {
     padding: 30px 0 !important;
   }
-  section > .container > .more-arrow > i {
+  section > .container > .more-arrow i {
     font-size: 2.65rem;
   }
 
@@ -366,7 +366,7 @@ footer {
     text-transform: uppercase;
   }
 
-  section.first > div.container #weather-window {
+  section#first > div.container #weather-window {
     width: 60%;
   }
 
