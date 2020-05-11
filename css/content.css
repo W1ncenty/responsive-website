@@ -56,6 +56,26 @@ header > .container > .logo-area > #logo > img {
 header > .container > #menu-desktop {
   display: none;
 }
+header > .container > .mobile {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+header > .container > .mobile #menu-mobile-collapsed {
+  height: 35px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 35px;
+}
+header > .container > .mobile #menu-mobile-expanded {
+  display: none;
+  text-align: center;
+  line-height: 1.5rem;
+}
+header > .container > .mobile #menu-mobile-expanded > div {
+  width: 100%;
+}
 
 section#first {
   background-image: url("../img/golf1.jpeg");
@@ -179,6 +199,9 @@ section#fifth {
   background-color: #458f98;
   color: #fff;
 }
+section#fifth > .background {
+  display: none;
+}
 section#fifth > .container {
   padding: 10px 20px;
 }
@@ -209,6 +232,9 @@ section#fifth > .container .more-arrow {
 }
 section#sixth {
   background-color: #e5eff0;
+}
+section#sixth > .background {
+  display: none;
 }
 section#sixth > .container h1 {
   margin-bottom: 5px;
@@ -308,9 +334,13 @@ footer {
     padding: 0 30px;
   }
 
+  header > .container > .mobile {
+    margin-bottom: 70px;
+  }
+
   section#first > .background {
     display: block;
-    height: 100px;
+    height: 80px;
     background-color: white;
     transform: skewY(-5deg);
     transform-origin: left;
@@ -448,6 +478,10 @@ footer {
 
   h1 {
     margin: 30px 0 !important;
+  }
+
+  header > .container > .mobile {
+    display: none;
   }
 
   section {

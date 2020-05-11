@@ -1,4 +1,4 @@
-const animationTime = 500;
+const scrollDownAnimationTime = 500;
 const sectionsToScrollTo = ['third', 'fourth', 'sixth', 'eighth'];
 
 $(document).ready(function (){
@@ -7,7 +7,7 @@ $(document).ready(function (){
         $(`#scroll-${sectionName}`).click(() => {
             $([document.documentElement, document.body]).animate({
                 scrollTop: $(`#${sectionName}`).offset().top
-            }, animationTime);
+            }, scrollDownAnimationTime);
         });
 
     });
