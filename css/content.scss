@@ -29,7 +29,7 @@ html {
 
 header > .container {
     > .logo-area {
-        z-index: 9999;
+        z-index: 9;
         position: relative;
         padding: $padding-small 0px;
         > .corner-options {
@@ -267,6 +267,10 @@ section {
 
 }
 
+#scroll-to-top-arrow {
+    display: none;
+}
+
 footer {
     display: none;
 }
@@ -368,6 +372,17 @@ footer {
     section#eighth > .container img {
         margin-top: $padding-small;
     }
+
+    #scroll-to-top-arrow {
+        display: block;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        background-color: white;
+        border: 1px solid black;
+        padding: 15px;
+        z-index: 99;
+    }
 }
 
 @media (min-width: 970px) {
@@ -455,12 +470,21 @@ footer {
             display: flex;
             padding: $padding-large 0px;
             text-transform: uppercase;
-            z-index: 9999;
+            z-index: 9;
         }
     }
 
     section#first > div.container #weather-window {
         width: 60%;
+    }
+
+    #scroll-to-top-arrow {
+        right: 20px;
+        bottom: 20px;
+        background-color: white;
+        border: 1px solid black;
+        padding: 10px;
+        z-index: 99;
     }
 
     footer {
