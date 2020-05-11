@@ -58,7 +58,6 @@ section {
         > .background {
             display: none;
         }
-        // tu magia
         background-image: url('../img/golf1.jpeg');
         background-position: center;
         background-size: cover;
@@ -145,7 +144,6 @@ section {
     }
 
     &#third {
-        // tu czary
         background-color: $color-bg-third;
         background-image: url('../img/golf2.jpg');
         background-position: center;
@@ -164,7 +162,6 @@ section {
     }
 
     &#fifth {
-        // tu czary
         background-color: $color-bg-fifth;
         color: $color-text-bright;
         > .container {
@@ -237,7 +234,6 @@ section {
     }
 
     &#seventh {
-        // tutaj magia
         color: $color-text-bright;
         background-color: $color-bg-seventh;
         background-image: url('../img/golf6.jpeg');
@@ -297,6 +293,78 @@ footer {
             }
         }
     }
+    section#third {
+        > .background {
+            display: block;
+            height: 100px;
+            background-color: white;
+            transform: skewY(-5deg);
+            transform-origin: left;
+        }
+        > .triangle {
+            display: block;
+            height: 870px;
+            background-color: #ff8764;
+            transform: skewY(5deg);
+            transform-origin: center;
+            opacity: 0.3;
+        }
+        > .container {
+            margin-top: -780px;
+            padding-bottom: 50px;
+        }
+    }
+    section#fifth {
+        position: relative;
+        margin-top: 100px;
+        padding-bottom: 100px;
+        > .background {
+            display: block;
+            height: 100px;
+            background-color: $color-bg-fifth;
+            transform: skewY(5deg);
+            transform-origin: center;
+            margin-top: -50px;
+        }
+        > .container {
+            margin-top: 30px;
+        }
+    }
+    section#sixth {
+        position: relative;
+        > .background {
+            display: block;
+            height: 100px;
+            background-color: $color-bg-sixth;
+            transform: skewY(5deg);
+            transform-origin: center;
+            margin-top: -50px;
+        }
+        > .container {
+            margin-top: 30px;
+        }
+    }
+    section#seventh {
+        > .background {
+            display: block;
+            height: 100px;
+            background-color: white;
+            transform: skewY(-5deg);
+            transform-origin: left;
+        }
+        > .triangle {
+            display: block;
+            height: 530px;
+            background-color: #70b8b4;
+            transform: skewY(5deg);
+            transform-origin: center;
+            opacity: 0.3;
+        }
+        > .container {
+            margin-top: -460px;
+        }
+    }
+
     section#eighth > .container img {
         margin-top: $padding-small;
     }
@@ -329,6 +397,51 @@ footer {
         &#first {
             > .background {
                 transform: skewY(-3deg);
+            }
+        }
+        &#third {
+            > .background {
+                height: 150px;
+                transform: skewY(-4deg);
+            }
+            > .triangle {
+                height: 700px;
+            }
+            > .container {
+                padding-top: 80px;
+                margin-top: -680px;
+            }
+        }
+        &#fifth {
+            > .background {
+                height: 100px;
+                transform: skewY(3deg);
+            }
+        }
+        &#sixth {
+            > .background {
+                height: 200px;
+                transform: skewY(3deg);
+            }
+            > .container {
+                margin-top: 120px;
+                img {
+                    top: 15em;
+                }
+            }
+        }
+        &.filler {
+            height: 350px;
+        }
+        &#seventh {
+            > .background {
+                transform: skewY(-3deg);
+            }
+            > .triangle {
+                height: 600px;
+            }
+            > .container {
+                margin-top: -510px;
             }
         }
     }

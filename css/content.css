@@ -320,6 +320,77 @@ footer {
     width: 66%;
   }
 
+  section#third > .background {
+    display: block;
+    height: 100px;
+    background-color: white;
+    transform: skewY(-5deg);
+    transform-origin: left;
+  }
+  section#third > .triangle {
+    display: block;
+    height: 870px;
+    background-color: #ff8764;
+    transform: skewY(5deg);
+    transform-origin: center;
+    opacity: 0.3;
+  }
+  section#third > .container {
+    margin-top: -780px;
+    padding-bottom: 50px;
+  }
+
+  section#fifth {
+    position: relative;
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+  section#fifth > .background {
+    display: block;
+    height: 100px;
+    background-color: #458f98;
+    transform: skewY(5deg);
+    transform-origin: center;
+    margin-top: -50px;
+  }
+  section#fifth > .container {
+    margin-top: 30px;
+  }
+
+  section#sixth {
+    position: relative;
+  }
+  section#sixth > .background {
+    display: block;
+    height: 100px;
+    background-color: #e5eff0;
+    transform: skewY(5deg);
+    transform-origin: center;
+    margin-top: -50px;
+  }
+  section#sixth > .container {
+    margin-top: 30px;
+  }
+
+  section#seventh > .background {
+    display: block;
+    height: 100px;
+    background-color: white;
+    transform: skewY(-5deg);
+    transform-origin: left;
+  }
+  section#seventh > .triangle {
+    display: block;
+    height: 530px;
+    background-color: #70b8b4;
+    transform: skewY(5deg);
+    transform-origin: center;
+    opacity: 0.3;
+  }
+  section#seventh > .container {
+    margin-top: -460px;
+  }
+
   section#eighth > .container img {
     margin-top: 10px;
   }
@@ -375,6 +446,43 @@ footer {
   }
   section#first > .background {
     transform: skewY(-3deg);
+  }
+  section#third > .background {
+    height: 150px;
+    transform: skewY(-4deg);
+  }
+  section#third > .triangle {
+    height: 700px;
+  }
+  section#third > .container {
+    padding-top: 80px;
+    margin-top: -680px;
+  }
+  section#fifth > .background {
+    height: 100px;
+    transform: skewY(3deg);
+  }
+  section#sixth > .background {
+    height: 200px;
+    transform: skewY(3deg);
+  }
+  section#sixth > .container {
+    margin-top: 120px;
+  }
+  section#sixth > .container img {
+    top: 15em;
+  }
+  section.filler {
+    height: 350px;
+  }
+  section#seventh > .background {
+    transform: skewY(-3deg);
+  }
+  section#seventh > .triangle {
+    height: 600px;
+  }
+  section#seventh > .container {
+    margin-top: -510px;
   }
 
   header > .container > .logo-area > .corner-options {
